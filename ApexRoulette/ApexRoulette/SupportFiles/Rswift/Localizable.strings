@@ -1,0 +1,19 @@
+/*
+   Localizable.strings
+   ApexRoulette
+ */
+
+// MARK: - common
+rouletet_start="START";
+
+// MARK: - character
+character_pick="キャラ選択";
+
+// MARK: - ammo
+light_ammo="ライトアモ";
+heavy_ammo="ヘビーアモ";
+shotgun_ammo="ショットガンアモ";
+sniper_ammo="スナイパーアモ";
+energy_ammo="エネルギーアモ";
+
+ammo_pick="アモ選択";

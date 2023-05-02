@@ -1,0 +1,46 @@
+name: ApexRoulette
+options:
+  bundleIdPrefix: com.gmail.daikiumehara3
+  deploymentTarget:
+    iOS: 15.0
+  developmentLanguage: ja
+packages:
+  Rswift:
+    url: https://github.com/mac-cain13/R.swift.Library
+    from: 5.4.0
+targets:
+  ApexRoulette:
+    type: application
+    platform: iOS
+    sources: [ApexRoulette]
+    settings:
+      base:
+        CURRENT_PROJECT_VERSION: 1.0
+        PRODUCT_NAME: ApexRoulette
+      configs:
+        debug:
+          CUSTOM_BUILD_SETTING: my_debug_value
+        release:
+          CUSTOM_BUILD_SETTING: my_release_value
+      attributes:
+        DevelopmentTeam: "Daiki Umehara"
+    dependencies:
+      - package: Rswift
+    info:
+      path: ApexRoulette/Info.plist
+      properties:
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UILaunchStoryboardName: LaunchScreen
+        UIUserInterFaceStyle: Light
+        AppUsesNon-ExemptEncryption: NO
+    preBuildScripts:
+      - name: Run R.swift
+        shell: /bin/sh
+        basedOnDependencyAnalysis: false
+        outputFiles:
+        - $(SRCROOT)/Rswift/R.generated.swift
+        script: |
+          if [ $(uname -m) = "arm64" ]; then
+            export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:${PATH+:$PATH}";
+          fi
+          mint run mac-cain13/R.swift@v6.1.0 rswift generate "${SRCROOT}/ApexRoulette/SupportFiles/Rswift/R.generated.swift"
