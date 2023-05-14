@@ -69,7 +69,7 @@ struct AmmoScreen: View {
                 Circle()
                     .foregroundColor(R.color.foreground.primary.color)
                     .overlay {
-                        Text(R.string.localizable.rouletet_start())
+                        Text(localizeString(key: .start))
                             .bold()
                             .foregroundColor(R.color.foreground.secondary.color)
                             .padding(.horizontal, 20)
@@ -78,6 +78,7 @@ struct AmmoScreen: View {
                     .frame(width: 100)
             }
             .disabled(isStartRoulette)
+            .disabled(selectedAmmo.count == 0)
 
             Spacer()
 
@@ -90,7 +91,7 @@ struct AmmoScreen: View {
             Button {
                 isPresented = true
             } label: {
-                Text(R.string.localizable.ammo_pick())
+                Text(localizeString(key: .pick_ammo))
                     .bold()
                     .foregroundColor(R.color.foreground.secondary.color)
                     .padding(.horizontal, 20)

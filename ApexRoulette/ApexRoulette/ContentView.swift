@@ -14,7 +14,7 @@ struct ContentView: View {
                     VStack {
                         Image(systemName: "person.fill")
 
-                        Text("キャラクター")
+                        Text(localizeString(key: .character))
                     }
                 }
 
@@ -23,7 +23,7 @@ struct ContentView: View {
                     VStack {
                         Image(systemName: "headlight.high.beam.fill")
 
-                        Text("アモ")
+                        Text(localizeString(key: .ammo))
                     }
                 }
         }

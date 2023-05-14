@@ -18,6 +18,27 @@ struct CharacterPickView: View {
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
+                HStack {
+                    Button {
+                        selectedChara = Character.allCases
+                    } label: {
+                        Text(localizeString(key: .pick_all))
+                            .bold()
+                            .frame(maxWidth: .infinity)
+                    }
+                    .primaryButton()
+
+                    Button {
+                        selectedChara = []
+                    } label: {
+                        Text(localizeString(key: .pick_clear))
+                            .bold()
+                            .frame(maxWidth: .infinity)
+                    }
+                    .primaryButton()
+                }
+                .padding(20)
+
                 LazyVGrid(columns: columns, spacing: 10) {
                     ForEach(Character.allCases) { character in
                         CharacterView(character: character.info)
@@ -56,7 +77,7 @@ struct CharacterPickView: View {
                 }
                 .padding(.trailing, 10)
             }
-            .navigationTitle(R.string.localizable.character_pick())
+            .navigationTitle(localizeString(key: .character_pick))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {

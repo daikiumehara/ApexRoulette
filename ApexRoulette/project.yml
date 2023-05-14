@@ -1,9 +1,12 @@
 name: ApexRoulette
+attributes:
+  ORGANIZATIONNAME: Daiki Umehara
 options:
   bundleIdPrefix: com.gmail.daikiumehara3
   deploymentTarget:
     iOS: 15.0
   developmentLanguage: ja
+  DEVELOPMENT_TEAM: 28624T34F8
 packages:
   Rswift:
     url: https://github.com/mac-cain13/R.swift.Library
@@ -22,8 +25,6 @@ targets:
           CUSTOM_BUILD_SETTING: my_debug_value
         release:
           CUSTOM_BUILD_SETTING: my_release_value
-      attributes:
-        DevelopmentTeam: "Daiki Umehara"
     dependencies:
       - package: Rswift
     info:
@@ -31,8 +32,10 @@ targets:
       properties:
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
         UILaunchStoryboardName: LaunchScreen
-        UIUserInterFaceStyle: Light
         AppUsesNon-ExemptEncryption: NO
+        TargetedDeviceFamilies: [iPhone]
+        SupportedDestinations: [iPhone]
+        Appearance: Light
     preBuildScripts:
       - name: Run R.swift
         shell: /bin/sh
@@ -44,3 +47,7 @@ targets:
             export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:${PATH+:$PATH}";
           fi
           mint run mac-cain13/R.swift@v6.1.0 rswift generate "${SRCROOT}/ApexRoulette/SupportFiles/Rswift/R.generated.swift"
+
+settingGroups:
+  appBaseSettings:
+    DEVELOPMENT_TEAM: 28624T34F8

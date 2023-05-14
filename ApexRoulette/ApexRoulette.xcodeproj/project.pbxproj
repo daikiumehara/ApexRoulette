@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02408D9886DE9BAA08E211C8 /* Rswift+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC985DDB5BEF915525200F80 /* Rswift+Extension.swift */; };
+		2649ABC29B31F92F893D6534 /* PrimaryButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B1E369CB2DEB3BD7E0211 /* PrimaryButtonModifier.swift */; };
 		285D84657CA11504BA474B33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048CD0CD3E6A48428407C6D9 /* Assets.xcassets */; };
 		2B3CCAB67E05D7E2125765EA /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56B148CFF959077BDB5B5F /* CharacterView.swift */; };
 		2B627D6C6470C2347F412C70 /* WeaponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F39809C1DF4CA3BFA2E5E19 /* WeaponView.swift */; };
@@ -17,7 +18,6 @@
 		36628045C51A0C6396421B21 /* AmmoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46110AFAFF02D20BED2ACCF6 /* AmmoPickerView.swift */; };
 		375B24E26AA05685E79FC3C6 /* AmmoTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08082B5A5DA964AB101FE058 /* AmmoTriangle.swift */; };
 		3E3620214E3E7D1B1C5490F0 /* AmmoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A6F48B6F4E4EE2B90C0510 /* AmmoInfo.swift */; };
-		42567F08CD1DF52FFE43B69E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F34221FD6E798E53DECAD4C /* Localizable.strings */; };
 		4A229C80E8880A03D4B370E2 /* ApexRouletteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FC7C612F464F2646F4604 /* ApexRouletteApp.swift */; };
 		564DEB42ADCBB3405CDAFE94 /* Ammo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31045B47E09BA47E417FB1A /* Ammo.swift */; };
 		6CF4A527FE6B034C76AACBA3 /* CharacterPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757B44EAFCA2D8B425780B3 /* CharacterPickView.swift */; };
@@ -26,6 +26,9 @@
 		8A1324D4C3A8C570F5EF3AA7 /* Roulette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83963F3AD2F7C68C35666A /* Roulette.swift */; };
 		91FA1C04D53810A5D4392F33 /* WeaponScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CEBFF09E809950F1F974D1 /* WeaponScreen.swift */; };
 		941CEB67376864AE91F716F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38DCF3F71BA241DE7A9D869 /* ContentView.swift */; };
+		A67B1BE52A10C3AE00B067F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67B1BE72A10C3AE00B067F3 /* Localizable.strings */; };
+		A67B1BEB2A10C9E100B067F3 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B1BEA2A10C9E100B067F3 /* Localizable.swift */; };
+		A67B1BEE2A10D22E00B067F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67B1BF02A10D22E00B067F3 /* Localizable.strings */; };
 		BE5318AA189708A1BBAC1975 /* CharacterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36EB1286E0BE668E622409 /* CharacterInfo.swift */; };
 		C4522B2B5F3953FD69BDA3EF /* CharacterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD523E273FC42ED1555C1E1 /* CharacterScreen.swift */; };
 		D96C68E721FC9645564AD553 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5AD83BFF58113041952B5B0 /* Preview Assets.xcassets */; };
@@ -38,7 +41,6 @@
 		048CD0CD3E6A48428407C6D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08082B5A5DA964AB101FE058 /* AmmoTriangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmoTriangle.swift; sourceTree = "<group>"; };
 		0A7B4EF2978659AA8BE734BA /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
-		0F34221FD6E798E53DECAD4C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2757B44EAFCA2D8B425780B3 /* CharacterPickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPickView.swift; sourceTree = "<group>"; };
 		30249215D010242B3AF7E904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		38A6F48B6F4E4EE2B90C0510 /* AmmoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmoInfo.swift; sourceTree = "<group>"; };
@@ -53,6 +55,9 @@
 		A01BD2257821BF9809A683E2 /* SelectCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCounter.swift; sourceTree = "<group>"; };
 		A31045B47E09BA47E417FB1A /* Ammo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ammo.swift; sourceTree = "<group>"; };
 		A3CEBFF09E809950F1F974D1 /* WeaponScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponScreen.swift; sourceTree = "<group>"; };
+		A67B1BE82A10C3B300B067F3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A67B1BEA2A10C9E100B067F3 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		A67B1BF22A10D2C700B067F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ACD523E273FC42ED1555C1E1 /* CharacterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterScreen.swift; sourceTree = "<group>"; };
 		B5AD83BFF58113041952B5B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C15FC7C612F464F2646F4604 /* ApexRouletteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexRouletteApp.swift; sourceTree = "<group>"; };
@@ -61,6 +66,7 @@
 		CC985DDB5BEF915525200F80 /* Rswift+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rswift+Extension.swift"; sourceTree = "<group>"; };
 		CD7AB89CA7DFADBA6E791C8A /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 		E18DE00A2040026362AA288B /* ApexRoulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApexRoulette.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F24B1E369CB2DEB3BD7E0211 /* PrimaryButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 				56CC9C953D76C659618D09F0 /* Ammo */,
 				14144E90FB4B549B2B814A95 /* Character */,
 				9E7A0A43C1CB7175409B243A /* Component */,
+				7D40357CECB3694B00884D22 /* Modifier */,
 				0F8928A2962442300FEDA455 /* Weapon */,
 			);
 			path = View;
@@ -115,7 +122,6 @@
 		31D4FCA2824533B03B891C6F /* Rswift */ = {
 			isa = PBXGroup;
 			children = (
-				0F34221FD6E798E53DECAD4C /* Localizable.strings */,
 				850A178DE25F970A90DAB847 /* R.generated.swift */,
 				CC985DDB5BEF915525200F80 /* Rswift+Extension.swift */,
 			);
@@ -153,6 +159,7 @@
 		5EECFE87022AE507B8FB44A7 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				A67B1BE92A10C9CA00B067F3 /* Localizable */,
 				EA4B991B875C110C27CD332A /* Preview Content */,
 				31D4FCA2824533B03B891C6F /* Rswift */,
 			);
@@ -183,6 +190,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7D40357CECB3694B00884D22 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				F24B1E369CB2DEB3BD7E0211 /* PrimaryButtonModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		7DC916539DB40E6979DF9A59 /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +224,16 @@
 				A01BD2257821BF9809A683E2 /* SelectCounter.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		A67B1BE92A10C9CA00B067F3 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				A67B1BE72A10C3AE00B067F3 /* Localizable.strings */,
+				A67B1BEA2A10C9E100B067F3 /* Localizable.swift */,
+				A67B1BF02A10D22E00B067F3 /* Localizable.strings */,
+			);
+			path = Localizable;
 			sourceTree = "<group>";
 		};
 		D0F4FD6DE3D8F7BB7C27C544 /* Products */ = {
@@ -266,14 +291,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "Daiki Umehara";
 			};
 			buildConfigurationList = 3991A0AB5F0A40F19B8573C9 /* Build configuration list for PBXProject "ApexRoulette" */;
 			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = ja;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				Base,
 				ja,
+				Base,
+				en,
 			);
 			mainGroup = 03197C546B1AD313B9CFDD8B;
 			packageReferences = (
@@ -293,7 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				285D84657CA11504BA474B33 /* Assets.xcassets in Resources */,
-				42567F08CD1DF52FFE43B69E /* Localizable.strings in Resources */,
+				A67B1BE52A10C3AE00B067F3 /* Localizable.strings in Resources */,
+				A67B1BEE2A10D22E00B067F3 /* Localizable.strings in Resources */,
 				D96C68E721FC9645564AD553 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +358,7 @@
 			files = (
 				564DEB42ADCBB3405CDAFE94 /* Ammo.swift in Sources */,
 				3E3620214E3E7D1B1C5490F0 /* AmmoInfo.swift in Sources */,
+				A67B1BEB2A10C9E100B067F3 /* Localizable.swift in Sources */,
 				36628045C51A0C6396421B21 /* AmmoPickerView.swift in Sources */,
 				DF76E83F3907A9F93E96F612 /* AmmoScreen.swift in Sources */,
 				375B24E26AA05685E79FC3C6 /* AmmoTriangle.swift in Sources */,
@@ -342,6 +371,7 @@
 				2B3CCAB67E05D7E2125765EA /* CharacterView.swift in Sources */,
 				E0BEF2F0C6050C05A880C4E5 /* Collection+Extension.swift in Sources */,
 				941CEB67376864AE91F716F3 /* ContentView.swift in Sources */,
+				2649ABC29B31F92F893D6534 /* PrimaryButtonModifier.swift in Sources */,
 				7A07DF31EF0A1A6792441B8E /* R.generated.swift in Sources */,
 				8A1324D4C3A8C570F5EF3AA7 /* Roulette.swift in Sources */,
 				02408D9886DE9BAA08E211C8 /* Rswift+Extension.swift in Sources */,
@@ -354,20 +384,41 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		A67B1BE72A10C3AE00B067F3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67B1BE82A10C3B300B067F3 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A67B1BF02A10D22E00B067F3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67B1BF22A10D2C700B067F3 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		34F95F88CF244958450CC559 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.1;
 				CUSTOM_BUILD_SETTING = my_debug_value;
 				DEVELOPMENT_TEAM = M4DFJLV2VG;
 				INFOPLIST_FILE = ApexRoulette/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.daikiumehara3.ApexRoulette;
 				PRODUCT_NAME = ApexRoulette;
 				SDKROOT = iphoneos;
@@ -383,14 +434,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.1;
 				CUSTOM_BUILD_SETTING = my_release_value;
 				DEVELOPMENT_TEAM = M4DFJLV2VG;
 				INFOPLIST_FILE = ApexRoulette/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.daikiumehara3.ApexRoulette;
 				PRODUCT_NAME = ApexRoulette;
 				SDKROOT = iphoneos;
@@ -405,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -461,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -1,0 +1,53 @@
+/* 
+  Localizable_ja.strings
+  ApexRoulette
+
+  Created by daiki umehara on 2023/05/14.
+  Copyright © 2023 Daiki Umehara. All rights reserved.
+*/
+
+// MARK: - common
+"start"="START";
+
+// MARK: - character
+"character"="キャラクター";
+"Bloodhound"="ブラッドハウンド";
+"Gibraltar"="ジブラルタル";
+"Lifeline"="ライフライン";
+"Pathfinder"="パスファインダー";
+"Wraith"="レイス";
+"Bangalore"="バンガロール";
+"Coustic"="コースティック";
+"Mirage"="ミラージュ";
+"Octane"="オクタン";
+"Wattson"="ワットソン";
+"Crypto"="クリプト";
+"Revenant"="レヴナント";
+"Loba"="ローバ";
+"Rampart"="ランパート";
+"Horizon"="ホライゾン";
+"Fuse"="ヒューズ";
+"Valkyrie"="ヴァルキリー";
+"Seer"="シア";
+"Ash"="アッシュ";
+"MadMaggie"="マッドマギー";
+"NewCastle"="ニューキャッスル";
+"Vantage"="ヴァンテージ";
+"Catalyst"="カタリスト";
+"Ballistic"="バリスティック";
+
+"character_pick"="キャラ選択";
+
+// MARK: - ammo
+"ammo"="アモ";
+"light_ammo"="ライトアモ";
+"heavy_ammo"="ヘビーアモ";
+"shotgun_ammo"="ショットガンアモ";
+"sniper_ammo"="スナイパーアモ";
+"energy_ammo"="エネルギーアモ";
+
+"pick_ammo"="アモ選択";
+
+// MARK: - Picker
+"pick_clear"="選択をクリア";
+"pick_all"="全て選択";

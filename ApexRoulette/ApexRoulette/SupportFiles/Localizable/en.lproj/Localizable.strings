@@ -1,0 +1,54 @@
+/* 
+  Localizable_en.strings
+  ApexRoulette
+
+  Created by daiki umehara on 2023/05/14.
+  Copyright © 2023 Daiki Umehara. All rights reserved.
+*/
+
+// MARK: - common
+"start"="START";
+
+// MARK: - character
+"character"="Character";
+
+"Bloodhound"="Bloodhound";
+"Gibraltar"="Gibraltar";
+"Lifeline"="Lifeline";
+"Pathfinder"="Pathfindzer";
+"Wraith"="Wraith";
+"Bangalore"="Bangalore";
+"Coustic"="Coustic";
+"Mirage"="Mirage";
+"Octane"="Octane";
+"Wattson"="Wattson";
+"Crypto"="Crypto";
+"Revenant"="Revenant";
+"Loba"="Loba";
+"Rampart"="Rampart";
+"Horizon"="Horizon";
+"Fuse"="Fuse";
+"Valkyrie"="Valkyrie";
+"Seer"="Seer";
+"Ash"="Ash";
+"MadMaggie"="Madmaggie";
+"NewCastle"="Newcastle";
+"Vantage"="Vantage";
+"Catalyst"="Catalyst";
+"Ballistic"="Ballistic";
+
+"character_pick"="Pick Character";
+
+// MARK: - ammo
+"ammo"="Ammo";
+"light_ammo"="Light Ammo";
+"heavy_ammo"="Heavy Ammo";
+"shotgun_ammo"="Shotgun Ammo";
+"sniper_ammo"="Sniper Ammo";
+"energy_ammo"="Energy Ammo";
+
+"pick_ammo"="Pick Ammo";
+
+// MARK: - Picker
+"pick_clear"="Clear";
+"pick_all"="All Selections";

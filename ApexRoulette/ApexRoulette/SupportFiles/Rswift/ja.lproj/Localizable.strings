@@ -17,3 +17,7 @@ sniper_ammo="スナイパーアモ";
 energy_ammo="エネルギーアモ";
 
 ammo_pick="アモ選択";
+
+// MARK: - Picker
+pick_clear="選択をクリア";
+pick_all="全て選択";

@@ -18,6 +18,27 @@ struct AmmoPickerView: View {
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
+                HStack {
+                    Button {
+                        selectedAmmo = Ammo.allCases
+                    } label: {
+                        Text(localizeString(key: .pick_all))
+                            .bold()
+                            .frame(maxWidth: .infinity)
+                    }
+                    .primaryButton()
+
+                    Button {
+                        selectedAmmo = []
+                    } label: {
+                        Text(localizeString(key: .pick_clear))
+                            .bold()
+                            .frame(maxWidth: .infinity)
+                    }
+                    .primaryButton()
+                }
+                .padding(20)
+
                 LazyVGrid(columns: columns, spacing: 10) {
                     ForEach(Ammo.allCases) { ammo in
                         AmmoView(ammo: ammo.info)
@@ -56,7 +77,7 @@ struct AmmoPickerView: View {
                 }
                 .padding(.trailing, 10)
             }
-            .navigationTitle(R.string.localizable.ammo_pick())
+            .navigationTitle(localizeString(key: .pick_ammo))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {

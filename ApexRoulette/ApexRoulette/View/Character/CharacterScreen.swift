@@ -68,7 +68,7 @@ struct CharacterScreen: View {
                 Circle()
                     .foregroundColor(R.color.foreground.primary.color)
                     .overlay {
-                        Text(R.string.localizable.rouletet_start())
+                        Text(localizeString(key: .start))
                             .bold()
                             .foregroundColor(R.color.foreground.secondary.color)
                             .padding(.horizontal, 20)
@@ -77,6 +77,8 @@ struct CharacterScreen: View {
                     .frame(width: 100)
             }
             .disabled(isStartRoulette)
+            .disabled(selectedChara.count < member.rawValue)
+            .opacity(isStartRoulette || selectedChara.count < member.rawValue ? 0.2 : 1.0)
 
             Spacer()
 
@@ -90,16 +92,10 @@ struct CharacterScreen: View {
             Button {
                 isPresented = true
             } label: {
-                Text(R.string.localizable.character_pick())
+                Text(localizeString(key: .character_pick))
                     .bold()
-                    .foregroundColor(R.color.foreground.secondary.color)
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 10)
-                    .background {
-                        RoundedRectangle(cornerRadius: 10)
-                            .foregroundColor(R.color.foreground.primary.color)
-                    }
             }
+            .primaryButton()
             .fullScreenCover(isPresented: $isPresented) {
                 CharacterPickView(isPresented: $isPresented, selectedChara: $selectedChara)
             }
