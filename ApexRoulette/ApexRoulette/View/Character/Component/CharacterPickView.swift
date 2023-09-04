@@ -41,24 +41,15 @@ struct CharacterPickView: View {
 
                 LazyVGrid(columns: columns, spacing: 10) {
                     ForEach(Character.allCases) { character in
+                        let isContains = selectedChara.contains(character)
                         CharacterView(character: character.info)
                             .aspectRatio(1, contentMode: .fit)
+                            .background(R.color.border.primary.color.opacity(isContains ? 0.1 : 0))
                             .overlay {
-                                if selectedChara.contains(character) {
+                                if isContains {
                                     ZStack(alignment: .topTrailing) {
                                         RoundedRectangle(cornerRadius: 10)
                                             .stroke(R.color.border.primary.color, lineWidth: lineWidth)
-
-                                        Image(systemName: "checkmark.circle.fill")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .frame(width: checkSize)
-                                            .foregroundColor(R.color.border.primary.color)
-                                            .background {
-                                                Circle()
-                                                    .fill(Color.white)
-                                            }
-                                            .offset(x: checkSize / 2, y: -checkSize / 2)
                                     }
                                 } else {
                                     RoundedRectangle(cornerRadius: 10)
@@ -88,7 +79,7 @@ struct CharacterPickView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 30)
-                            .foregroundColor(R.color.foreground.primary.color)
+                            .foregroundColor(R.color.foreground.black.color)
                     }
                 }
             }

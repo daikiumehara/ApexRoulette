@@ -26,9 +26,14 @@
 		8A1324D4C3A8C570F5EF3AA7 /* Roulette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83963F3AD2F7C68C35666A /* Roulette.swift */; };
 		91FA1C04D53810A5D4392F33 /* WeaponScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CEBFF09E809950F1F974D1 /* WeaponScreen.swift */; };
 		941CEB67376864AE91F716F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38DCF3F71BA241DE7A9D869 /* ContentView.swift */; };
+		A67A66B62A6515E700F346E3 /* PrimaryCircleButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A66B52A6515E700F346E3 /* PrimaryCircleButtonModifier.swift */; };
 		A67B1BE52A10C3AE00B067F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67B1BE72A10C3AE00B067F3 /* Localizable.strings */; };
 		A67B1BEB2A10C9E100B067F3 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B1BEA2A10C9E100B067F3 /* Localizable.swift */; };
 		A67B1BEE2A10D22E00B067F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67B1BF02A10D22E00B067F3 /* Localizable.strings */; };
+		A67B1BF52A3D9C6E00B067F3 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = A67B1BF42A3D9C6E00B067F3 /* GoogleMobileAds */; };
+		A67B1BF72A3D9FB300B067F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B1BF62A3D9FB300B067F3 /* AppDelegate.swift */; };
+		A67B1BFA2A3DB9FE00B067F3 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B1BF92A3DB9FE00B067F3 /* BannerViewController.swift */; };
+		A67B1BFC2A3DBD9500B067F3 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B1BFB2A3DBD9500B067F3 /* BannerView.swift */; };
 		BE5318AA189708A1BBAC1975 /* CharacterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36EB1286E0BE668E622409 /* CharacterInfo.swift */; };
 		C4522B2B5F3953FD69BDA3EF /* CharacterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD523E273FC42ED1555C1E1 /* CharacterScreen.swift */; };
 		D96C68E721FC9645564AD553 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5AD83BFF58113041952B5B0 /* Preview Assets.xcassets */; };
@@ -55,9 +60,13 @@
 		A01BD2257821BF9809A683E2 /* SelectCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCounter.swift; sourceTree = "<group>"; };
 		A31045B47E09BA47E417FB1A /* Ammo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ammo.swift; sourceTree = "<group>"; };
 		A3CEBFF09E809950F1F974D1 /* WeaponScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponScreen.swift; sourceTree = "<group>"; };
+		A67A66B52A6515E700F346E3 /* PrimaryCircleButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryCircleButtonModifier.swift; sourceTree = "<group>"; };
 		A67B1BE82A10C3B300B067F3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A67B1BEA2A10C9E100B067F3 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		A67B1BF22A10D2C700B067F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A67B1BF62A3D9FB300B067F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A67B1BF92A3DB9FE00B067F3 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
+		A67B1BFB2A3DBD9500B067F3 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		ACD523E273FC42ED1555C1E1 /* CharacterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterScreen.swift; sourceTree = "<group>"; };
 		B5AD83BFF58113041952B5B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C15FC7C612F464F2646F4604 /* ApexRouletteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexRouletteApp.swift; sourceTree = "<group>"; };
@@ -74,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A67B1BF52A3D9C6E00B067F3 /* GoogleMobileAds in Frameworks */,
 				70D26F756305FFCD8D41C171 /* Rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +120,7 @@
 		22410F4B0710EA11204B65EF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A67B1BF82A3DB9ED00B067F3 /* Admob */,
 				56CC9C953D76C659618D09F0 /* Ammo */,
 				14144E90FB4B549B2B814A95 /* Character */,
 				9E7A0A43C1CB7175409B243A /* Component */,
@@ -178,6 +189,7 @@
 				6617B81815380F0460E1AB57 /* Model */,
 				5EECFE87022AE507B8FB44A7 /* SupportFiles */,
 				22410F4B0710EA11204B65EF /* View */,
+				A67B1BF62A3D9FB300B067F3 /* AppDelegate.swift */,
 			);
 			path = ApexRoulette;
 			sourceTree = "<group>";
@@ -194,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				F24B1E369CB2DEB3BD7E0211 /* PrimaryButtonModifier.swift */,
+				A67A66B52A6515E700F346E3 /* PrimaryCircleButtonModifier.swift */,
 			);
 			path = Modifier;
 			sourceTree = "<group>";
@@ -234,6 +247,15 @@
 				A67B1BF02A10D22E00B067F3 /* Localizable.strings */,
 			);
 			path = Localizable;
+			sourceTree = "<group>";
+		};
+		A67B1BF82A3DB9ED00B067F3 /* Admob */ = {
+			isa = PBXGroup;
+			children = (
+				A67B1BF92A3DB9FE00B067F3 /* BannerViewController.swift */,
+				A67B1BFB2A3DBD9500B067F3 /* BannerView.swift */,
+			);
+			path = Admob;
 			sourceTree = "<group>";
 		};
 		D0F4FD6DE3D8F7BB7C27C544 /* Products */ = {
@@ -279,6 +301,7 @@
 			name = ApexRoulette;
 			packageProductDependencies = (
 				DB8BC5A10D086F413C75B8A7 /* Rswift */,
+				A67B1BF42A3D9C6E00B067F3 /* GoogleMobileAds */,
 			);
 			productName = ApexRoulette;
 			productReference = E18DE00A2040026362AA288B /* ApexRoulette.app */;
@@ -305,6 +328,7 @@
 			mainGroup = 03197C546B1AD313B9CFDD8B;
 			packageReferences = (
 				339F58BFF5962AEBC3BADA18 /* XCRemoteSwiftPackageReference "R.swift" */,
+				A67B1BF32A3D9C6E00B067F3 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A67B1BF72A3D9FB300B067F3 /* AppDelegate.swift in Sources */,
 				564DEB42ADCBB3405CDAFE94 /* Ammo.swift in Sources */,
 				3E3620214E3E7D1B1C5490F0 /* AmmoInfo.swift in Sources */,
 				A67B1BEB2A10C9E100B067F3 /* Localizable.swift in Sources */,
@@ -365,6 +390,7 @@
 				2F6F3D972B87975784F03985 /* AmmoView.swift in Sources */,
 				4A229C80E8880A03D4B370E2 /* ApexRouletteApp.swift in Sources */,
 				2FBFBF246EA7BB1A30EEE40F /* Charactar.swift in Sources */,
+				A67B1BFA2A3DB9FE00B067F3 /* BannerViewController.swift in Sources */,
 				BE5318AA189708A1BBAC1975 /* CharacterInfo.swift in Sources */,
 				6CF4A527FE6B034C76AACBA3 /* CharacterPickView.swift in Sources */,
 				C4522B2B5F3953FD69BDA3EF /* CharacterScreen.swift in Sources */,
@@ -373,11 +399,13 @@
 				941CEB67376864AE91F716F3 /* ContentView.swift in Sources */,
 				2649ABC29B31F92F893D6534 /* PrimaryButtonModifier.swift in Sources */,
 				7A07DF31EF0A1A6792441B8E /* R.generated.swift in Sources */,
+				A67A66B62A6515E700F346E3 /* PrimaryCircleButtonModifier.swift in Sources */,
 				8A1324D4C3A8C570F5EF3AA7 /* Roulette.swift in Sources */,
 				02408D9886DE9BAA08E211C8 /* Rswift+Extension.swift in Sources */,
 				FA788E18EE1499043CB45A98 /* SelectCounter.swift in Sources */,
 				2E9ECD96C5BDF9C387CCCF42 /* Weapon.swift in Sources */,
 				91FA1C04D53810A5D4392F33 /* WeaponScreen.swift in Sources */,
+				A67B1BFC2A3DBD9500B067F3 /* BannerView.swift in Sources */,
 				2B627D6C6470C2347F412C70 /* WeaponView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,7 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.4.1;
 				CUSTOM_BUILD_SETTING = my_debug_value;
 				DEVELOPMENT_TEAM = M4DFJLV2VG;
 				INFOPLIST_FILE = ApexRoulette/Info.plist;
@@ -418,7 +446,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.4.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.daikiumehara3.ApexRoulette;
 				PRODUCT_NAME = ApexRoulette;
 				SDKROOT = iphoneos;
@@ -434,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.4.1;
 				CUSTOM_BUILD_SETTING = my_release_value;
 				DEVELOPMENT_TEAM = M4DFJLV2VG;
 				INFOPLIST_FILE = ApexRoulette/Info.plist;
@@ -443,7 +472,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.4.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.daikiumehara3.ApexRoulette;
 				PRODUCT_NAME = ApexRoulette;
 				SDKROOT = iphoneos;
@@ -607,9 +637,22 @@
 				minimumVersion = 5.4.0;
 			};
 		};
+		A67B1BF32A3D9C6E00B067F3 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A67B1BF42A3D9C6E00B067F3 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A67B1BF32A3D9C6E00B067F3 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
 		DB8BC5A10D086F413C75B8A7 /* Rswift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 339F58BFF5962AEBC3BADA18 /* XCRemoteSwiftPackageReference "R.swift" */;

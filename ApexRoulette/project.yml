@@ -11,6 +11,9 @@ packages:
   Rswift:
     url: https://github.com/mac-cain13/R.swift.Library
     from: 5.4.0
+  GoogleMobileAds:
+    url: https://github.com/googleads/swift-package-manager-google-mobile-ads.git
+    from: 10.0.0
 targets:
   ApexRoulette:
     type: application

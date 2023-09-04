@@ -66,19 +66,14 @@ struct AmmoScreen: View {
                     }
                 }
             } label: {
-                Circle()
-                    .foregroundColor(R.color.foreground.primary.color)
-                    .overlay {
-                        Text(localizeString(key: .start))
-                            .bold()
-                            .foregroundColor(R.color.foreground.secondary.color)
-                            .padding(.horizontal, 20)
-                            .padding(.vertical, 10)
-                    }
-                    .frame(width: 100)
+                Text(localizeString(key: .start))
+                    .bold()
+                    .frame(width: 100, height: 100)
             }
-            .disabled(isStartRoulette)
-            .disabled(selectedAmmo.count == 0)
+            .primaryCircleButton(disable: .init(
+                get: { isStartRoulette || selectedAmmo.count == 0 },
+                set: { _ in }
+            ))
 
             Spacer()
 
@@ -93,14 +88,8 @@ struct AmmoScreen: View {
             } label: {
                 Text(localizeString(key: .pick_ammo))
                     .bold()
-                    .foregroundColor(R.color.foreground.secondary.color)
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 10)
-                    .background {
-                        RoundedRectangle(cornerRadius: 10)
-                            .foregroundColor(R.color.foreground.primary.color)
-                    }
             }
+            .primaryButton()
             .fullScreenCover(isPresented: $isPresented) {
                 AmmoPickerView(isPresented: $isPresented, selectedAmmo: $selectedAmmo)
             }

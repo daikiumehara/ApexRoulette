@@ -388,12 +388,34 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    /// This `R.color.foreground` struct is generated, and contains static references to 2 colors.
+    /// This `R.color.foreground` struct is generated, and contains static references to 4 colors.
     struct foreground {
+      /// Color `Black`.
+      static let black = Rswift.ColorResource(bundle: R.hostingBundle, name: "foreground/Black")
+      /// Color `Invalid`.
+      static let invalid = Rswift.ColorResource(bundle: R.hostingBundle, name: "foreground/Invalid")
       /// Color `primary`.
       static let primary = Rswift.ColorResource(bundle: R.hostingBundle, name: "foreground/primary")
       /// Color `secondary`.
       static let secondary = Rswift.ColorResource(bundle: R.hostingBundle, name: "foreground/secondary")
+
+      #if os(iOS) || os(tvOS)
+      /// `UIColor(named: "Black", bundle: ..., traitCollection: ...)`
+      @available(tvOS 11.0, *)
+      @available(iOS 11.0, *)
+      static func black(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+        return UIKit.UIColor(resource: R.color.foreground.black, compatibleWith: traitCollection)
+      }
+      #endif
+
+      #if os(iOS) || os(tvOS)
+      /// `UIColor(named: "Invalid", bundle: ..., traitCollection: ...)`
+      @available(tvOS 11.0, *)
+      @available(iOS 11.0, *)
+      static func invalid(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+        return UIKit.UIColor(resource: R.color.foreground.invalid, compatibleWith: traitCollection)
+      }
+      #endif
 
       #if os(iOS) || os(tvOS)
       /// `UIColor(named: "primary", bundle: ..., traitCollection: ...)`
@@ -410,6 +432,22 @@ struct R: Rswift.Validatable {
       @available(iOS 11.0, *)
       static func secondary(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
         return UIKit.UIColor(resource: R.color.foreground.secondary, compatibleWith: traitCollection)
+      }
+      #endif
+
+      #if os(watchOS)
+      /// `UIColor(named: "Black", bundle: ..., traitCollection: ...)`
+      @available(watchOSApplicationExtension 4.0, *)
+      static func black(_: Void = ()) -> UIKit.UIColor? {
+        return UIKit.UIColor(named: R.color.foreground.black.name)
+      }
+      #endif
+
+      #if os(watchOS)
+      /// `UIColor(named: "Invalid", bundle: ..., traitCollection: ...)`
+      @available(watchOSApplicationExtension 4.0, *)
+      static func invalid(_: Void = ()) -> UIKit.UIColor? {
+        return UIKit.UIColor(named: R.color.foreground.invalid.name)
       }
       #endif
 

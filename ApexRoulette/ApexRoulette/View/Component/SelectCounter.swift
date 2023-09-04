@@ -20,6 +20,13 @@ struct SelectCounter<T: Hashable>: View {
             }
         }
         .pickerStyle(.segmented)
+        .onAppear {
+            let appearance = UISegmentedControl.appearance()
+            appearance.setTitleTextAttributes([.foregroundColor: R.color.foreground.secondary()!], for: .selected)
+            appearance.setTitleTextAttributes([.foregroundColor: R.color.foreground.secondary()!], for: .normal)
+            appearance.backgroundColor = R.color.foreground.black()
+            appearance.selectedSegmentTintColor = R.color.foreground.primary()
+        }
     }
 }
 

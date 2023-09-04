@@ -7,26 +7,34 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        TabView {
-            CharacterScreen()
-                .tabItem {
-                    VStack {
-                        Image(systemName: "person.fill")
+        VStack {
+            TabView {
+                CharacterScreen()
+                    .tabItem {
+                        VStack {
+                            Image(systemName: "person.fill")
 
-                        Text(localizeString(key: .character))
+                            Text(localizeString(key: .character))
+                        }
                     }
-                }
 
-            AmmoScreen()
-                .tabItem {
-                    VStack {
-                        Image(systemName: "headlight.high.beam.fill")
+                AmmoScreen()
+                    .tabItem {
+                        VStack {
+                            Image(systemName: "headlight.high.beam.fill")
 
-                        Text(localizeString(key: .ammo))
+                            Text(localizeString(key: .ammo))
+                        }
                     }
-                }
+            }
+            .accentColor(R.color.foreground.primary.color)
+
+            BannerView()
+                .frame(height: 61)
         }
+        .ignoresSafeArea(edges: .bottom)
     }
 }
 

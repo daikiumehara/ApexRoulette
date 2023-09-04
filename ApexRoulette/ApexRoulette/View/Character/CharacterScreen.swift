@@ -65,20 +65,14 @@ struct CharacterScreen: View {
                     }
                 }
             } label: {
-                Circle()
-                    .foregroundColor(R.color.foreground.primary.color)
-                    .overlay {
-                        Text(localizeString(key: .start))
-                            .bold()
-                            .foregroundColor(R.color.foreground.secondary.color)
-                            .padding(.horizontal, 20)
-                            .padding(.vertical, 10)
-                    }
-                    .frame(width: 100)
+                Text(localizeString(key: .start))
+                    .bold()
+                    .frame(width: 100, height: 100)
             }
-            .disabled(isStartRoulette)
-            .disabled(selectedChara.count < member.rawValue)
-            .opacity(isStartRoulette || selectedChara.count < member.rawValue ? 0.2 : 1.0)
+            .primaryCircleButton(disable: .init(
+                get: { isStartRoulette || selectedChara.count < member.rawValue },
+                set: { _ in }
+            ))
 
             Spacer()
 
@@ -86,8 +80,8 @@ struct CharacterScreen: View {
             SelectCounter(selection: $member, items: Member.allCases, toImage: { item in
                 item.image
             })
-                .frame(width: 300)
-                .padding()
+            .frame(width: 300)
+            .padding()
 
             Button {
                 isPresented = true

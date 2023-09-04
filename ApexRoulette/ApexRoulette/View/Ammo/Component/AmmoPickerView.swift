@@ -41,24 +41,15 @@ struct AmmoPickerView: View {
 
                 LazyVGrid(columns: columns, spacing: 10) {
                     ForEach(Ammo.allCases) { ammo in
+                        let isContains = selectedAmmo.contains(ammo)
                         AmmoView(ammo: ammo.info)
                             .aspectRatio(1, contentMode: .fit)
+                            .background(R.color.border.primary.color.opacity(isContains ? 0.1 : 0))
                             .overlay {
-                                if selectedAmmo.contains(ammo) {
+                                if isContains {
                                     ZStack(alignment: .topTrailing) {
                                         RoundedRectangle(cornerRadius: 10)
                                             .stroke(R.color.border.primary.color, lineWidth: lineWidth)
-
-                                        Image(systemName: "checkmark.circle.fill")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .frame(width: checkSize)
-                                            .foregroundColor(R.color.border.primary.color)
-                                            .background {
-                                                Circle()
-                                                    .fill(Color.white)
-                                            }
-                                            .offset(x: checkSize / 2, y: -checkSize / 2)
                                     }
                                 } else {
                                     RoundedRectangle(cornerRadius: 10)
@@ -88,7 +79,7 @@ struct AmmoPickerView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 30)
-                            .foregroundColor(R.color.foreground.primary.color)
+                            .foregroundColor(R.color.foreground.black.color)
                     }
                 }
             }
