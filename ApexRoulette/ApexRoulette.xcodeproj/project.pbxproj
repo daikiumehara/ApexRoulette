@@ -59,6 +59,7 @@
 		A01BD2257821BF9809A683E2 /* SelectCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCounter.swift; sourceTree = "<group>"; };
 		A31045B47E09BA47E417FB1A /* Ammo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ammo.swift; sourceTree = "<group>"; };
 		A3CEBFF09E809950F1F974D1 /* WeaponScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponScreen.swift; sourceTree = "<group>"; };
+		A67355B72B85E20800C53F61 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		A67A66B52A6515E700F346E3 /* PrimaryCircleButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryCircleButtonModifier.swift; sourceTree = "<group>"; };
 		A67B1BE82A10C3B300B067F3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A67B1BEA2A10C9E100B067F3 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 		03197C546B1AD313B9CFDD8B = {
 			isa = PBXGroup;
 			children = (
+				A67355B62B85E1E800C53F61 /* ci_scripts */,
 				646BC7C69CFDB968C48BD532 /* ApexRoulette */,
 				D0F4FD6DE3D8F7BB7C27C544 /* Products */,
 				A67355A72B85D16000C53F61 /* Frameworks */,
@@ -245,6 +247,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A67355B62B85E1E800C53F61 /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				A67355B72B85E20800C53F61 /* ci_post_clone.sh */,
+			);
+			path = ci_scripts;
 			sourceTree = "<group>";
 		};
 		A67B1BE92A10C9CA00B067F3 /* Localizable */ = {
