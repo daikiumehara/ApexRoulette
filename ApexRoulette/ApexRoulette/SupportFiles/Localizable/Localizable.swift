@@ -32,6 +32,7 @@ struct LocalizeKeys {
         case Pathfinder
         case Wraith
         case Bangalore
+
         case Coustic
         case Mirage
         case Octane
@@ -50,8 +51,20 @@ struct LocalizeKeys {
         case Vantage
         case Catalyst
         case Ballistic
+        case Conduit
+
+        case scumisher
+        case support
+        case assault
+        case reconnaissance
+        case controller
+        case none
 
         case character_pick
+        case detail_setting
+        case select_role
+        case pick_count
+        case select_role_description
 
         // MARK: - ammo
         case ammo

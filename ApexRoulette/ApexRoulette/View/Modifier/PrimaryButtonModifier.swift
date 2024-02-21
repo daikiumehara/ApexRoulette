@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct PrimaryButtonModifier: ButtonStyle {
+    var disable: Binding<Bool>?
     private let cornerRadius: CGFloat = 10
     private let offset: CGFloat = 6
     private let defaultOffset: CGFloat = 2
@@ -21,19 +22,24 @@ struct PrimaryButtonModifier: ButtonStyle {
             .background {
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .foregroundColor(R.color.foreground.black.color)
-                    .offset(x: 0, y: configuration.isPressed ? defaultOffset : offset)
+                    .offset(x: 0, y: isDown(configuration.isPressed) ? defaultOffset : offset)
                     .overlay {
                         RoundedRectangle(cornerRadius: cornerRadius)
-                            .foregroundColor(R.color.foreground.primary.color)
+                            .foregroundColor((disable?.wrappedValue ?? false) ? R.color.foreground.invalid.color : R.color.foreground.primary.color)
                     }
             }
-            .offset(x: 0, y: configuration.isPressed ? offset : defaultOffset)
+            .offset(x: 0, y: isDown(configuration.isPressed)  ? offset : defaultOffset)
+    }
+
+    func isDown(_ isPress: Bool) -> Bool {
+        isPress && !(disable?.wrappedValue ?? false)
     }
 }
 
 extension Button {
-    func primaryButton() -> some View {
-        self.buttonStyle(PrimaryButtonModifier())
+    func primaryButton(_ disable: Binding<Bool>? = nil) -> some View {
+        self.buttonStyle(PrimaryButtonModifier(disable: disable))
+            .disabled(disable?.wrappedValue ?? false)
     }
 }
 

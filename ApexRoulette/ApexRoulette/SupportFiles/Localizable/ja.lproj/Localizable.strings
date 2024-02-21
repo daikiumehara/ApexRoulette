@@ -11,6 +11,7 @@
 
 // MARK: - character
 "character"="キャラクター";
+
 "Bloodhound"="ブラッドハウンド";
 "Gibraltar"="ジブラルタル";
 "Lifeline"="ライフライン";
@@ -35,8 +36,20 @@
 "Vantage"="ヴァンテージ";
 "Catalyst"="カタリスト";
 "Ballistic"="バリスティック";
+"Conduit"="コンジット";
+
+"scumisher"="スカーミッシャー";
+"support"="サポート";
+"assault"="アサルト";
+"reconnaissance"="リコン";
+"controller"="コントローラー";
+"none"="???";
 
 "character_pick"="キャラ選択";
+"detail_setting"="詳細設定";
+"select_role"="ロールを選択";
+"pick_count"="ピック数";
+"select_role_description"="選択数が上限に満たない場合はランダムで選択されます。";
 
 // MARK: - ammo
 "ammo"="アモ";

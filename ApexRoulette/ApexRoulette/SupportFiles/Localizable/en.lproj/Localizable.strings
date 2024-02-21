@@ -36,8 +36,20 @@
 "Vantage"="Vantage";
 "Catalyst"="Catalyst";
 "Ballistic"="Ballistic";
+"Conduit"="Conduit";
+
+"scumisher"="Scumisher";
+"support"="Support";
+"assault"="Assault";
+"reconnaissance"="Reconnaissance";
+"controller"="Controller";
+"none"="???";
 
 "character_pick"="Pick Character";
+"detail_setting"="Detail Setting";
+"select_role"="Select Role";
+"pick_count"="Pick Count";
+"select_role_description"="If the number of selections is less than the limit, a random selection will be made.";
 
 // MARK: - ammo
 "ammo"="Ammo";

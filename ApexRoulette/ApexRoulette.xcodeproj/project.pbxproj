@@ -21,8 +21,6 @@
 		4A229C80E8880A03D4B370E2 /* ApexRouletteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FC7C612F464F2646F4604 /* ApexRouletteApp.swift */; };
 		564DEB42ADCBB3405CDAFE94 /* Ammo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31045B47E09BA47E417FB1A /* Ammo.swift */; };
 		6CF4A527FE6B034C76AACBA3 /* CharacterPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757B44EAFCA2D8B425780B3 /* CharacterPickView.swift */; };
-		70D26F756305FFCD8D41C171 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = DB8BC5A10D086F413C75B8A7 /* Rswift */; };
-		7A07DF31EF0A1A6792441B8E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850A178DE25F970A90DAB847 /* R.generated.swift */; };
 		8A1324D4C3A8C570F5EF3AA7 /* Roulette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83963F3AD2F7C68C35666A /* Roulette.swift */; };
 		91FA1C04D53810A5D4392F33 /* WeaponScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CEBFF09E809950F1F974D1 /* WeaponScreen.swift */; };
 		941CEB67376864AE91F716F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38DCF3F71BA241DE7A9D869 /* ContentView.swift */; };
@@ -34,6 +32,8 @@
 		A67B1BF72A3D9FB300B067F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B1BF62A3D9FB300B067F3 /* AppDelegate.swift */; };
 		A67B1BFA2A3DB9FE00B067F3 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B1BF92A3DB9FE00B067F3 /* BannerViewController.swift */; };
 		A67B1BFC2A3DBD9500B067F3 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B1BFB2A3DBD9500B067F3 /* BannerView.swift */; };
+		A6E9F8732AAAF3FB00D99DFF /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = A6E9F8722AAAF3FB00D99DFF /* RswiftLibrary */; };
+		A6E9F87C2AAB018200D99DFF /* DetailSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9F87B2AAB018200D99DFF /* DetailSettingView.swift */; };
 		BE5318AA189708A1BBAC1975 /* CharacterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36EB1286E0BE668E622409 /* CharacterInfo.swift */; };
 		C4522B2B5F3953FD69BDA3EF /* CharacterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD523E273FC42ED1555C1E1 /* CharacterScreen.swift */; };
 		D96C68E721FC9645564AD553 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5AD83BFF58113041952B5B0 /* Preview Assets.xcassets */; };
@@ -56,7 +56,6 @@
 		4F39809C1DF4CA3BFA2E5E19 /* WeaponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponView.swift; sourceTree = "<group>"; };
 		5A36EB1286E0BE668E622409 /* CharacterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfo.swift; sourceTree = "<group>"; };
 		6F83963F3AD2F7C68C35666A /* Roulette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roulette.swift; sourceTree = "<group>"; };
-		850A178DE25F970A90DAB847 /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		A01BD2257821BF9809A683E2 /* SelectCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCounter.swift; sourceTree = "<group>"; };
 		A31045B47E09BA47E417FB1A /* Ammo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ammo.swift; sourceTree = "<group>"; };
 		A3CEBFF09E809950F1F974D1 /* WeaponScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponScreen.swift; sourceTree = "<group>"; };
@@ -67,6 +66,7 @@
 		A67B1BF62A3D9FB300B067F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A67B1BF92A3DB9FE00B067F3 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 		A67B1BFB2A3DBD9500B067F3 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		A6E9F87B2AAB018200D99DFF /* DetailSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSettingView.swift; sourceTree = "<group>"; };
 		ACD523E273FC42ED1555C1E1 /* CharacterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterScreen.swift; sourceTree = "<group>"; };
 		B5AD83BFF58113041952B5B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C15FC7C612F464F2646F4604 /* ApexRouletteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexRouletteApp.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A67B1BF52A3D9C6E00B067F3 /* GoogleMobileAds in Frameworks */,
-				70D26F756305FFCD8D41C171 /* Rswift in Frameworks */,
+				A6E9F8732AAAF3FB00D99DFF /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +96,7 @@
 			children = (
 				646BC7C69CFDB968C48BD532 /* ApexRoulette */,
 				D0F4FD6DE3D8F7BB7C27C544 /* Products */,
+				A67355A72B85D16000C53F61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,7 +134,6 @@
 		31D4FCA2824533B03B891C6F /* Rswift */ = {
 			isa = PBXGroup;
 			children = (
-				850A178DE25F970A90DAB847 /* R.generated.swift */,
 				CC985DDB5BEF915525200F80 /* Rswift+Extension.swift */,
 			);
 			path = Rswift;
@@ -163,6 +163,7 @@
 			children = (
 				2757B44EAFCA2D8B425780B3 /* CharacterPickView.swift */,
 				3A56B148CFF959077BDB5B5F /* CharacterView.swift */,
+				A6E9F87B2AAB018200D99DFF /* DetailSettingView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -239,6 +240,13 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
+		A67355A72B85D16000C53F61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A67B1BE92A10C9CA00B067F3 /* Localizable */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,11 +305,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				A6E9F8772AAAF48300D99DFF /* PBXTargetDependency */,
 			);
 			name = ApexRoulette;
 			packageProductDependencies = (
-				DB8BC5A10D086F413C75B8A7 /* Rswift */,
 				A67B1BF42A3D9C6E00B067F3 /* GoogleMobileAds */,
+				A6E9F8722AAAF3FB00D99DFF /* RswiftLibrary */,
 			);
 			productName = ApexRoulette;
 			productReference = E18DE00A2040026362AA288B /* ApexRoulette.app */;
@@ -329,6 +338,7 @@
 			packageReferences = (
 				339F58BFF5962AEBC3BADA18 /* XCRemoteSwiftPackageReference "R.swift" */,
 				A67B1BF32A3D9C6E00B067F3 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				A6E9F8712AAAF3FB00D99DFF /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
@@ -384,6 +394,7 @@
 				564DEB42ADCBB3405CDAFE94 /* Ammo.swift in Sources */,
 				3E3620214E3E7D1B1C5490F0 /* AmmoInfo.swift in Sources */,
 				A67B1BEB2A10C9E100B067F3 /* Localizable.swift in Sources */,
+				A6E9F87C2AAB018200D99DFF /* DetailSettingView.swift in Sources */,
 				36628045C51A0C6396421B21 /* AmmoPickerView.swift in Sources */,
 				DF76E83F3907A9F93E96F612 /* AmmoScreen.swift in Sources */,
 				375B24E26AA05685E79FC3C6 /* AmmoTriangle.swift in Sources */,
@@ -398,7 +409,6 @@
 				E0BEF2F0C6050C05A880C4E5 /* Collection+Extension.swift in Sources */,
 				941CEB67376864AE91F716F3 /* ContentView.swift in Sources */,
 				2649ABC29B31F92F893D6534 /* PrimaryButtonModifier.swift in Sources */,
-				7A07DF31EF0A1A6792441B8E /* R.generated.swift in Sources */,
 				A67A66B62A6515E700F346E3 /* PrimaryCircleButtonModifier.swift in Sources */,
 				8A1324D4C3A8C570F5EF3AA7 /* Roulette.swift in Sources */,
 				02408D9886DE9BAA08E211C8 /* Rswift+Extension.swift in Sources */,
@@ -411,6 +421,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6E9F8772AAAF48300D99DFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = A6E9F8762AAAF48300D99DFF /* RswiftGenerateInternalResources */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A67B1BE72A10C3AE00B067F3 /* Localizable.strings */ = {
@@ -437,7 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.4.1;
+				CURRENT_PROJECT_VERSION = 1.6;
 				CUSTOM_BUILD_SETTING = my_debug_value;
 				DEVELOPMENT_TEAM = M4DFJLV2VG;
 				INFOPLIST_FILE = ApexRoulette/Info.plist;
@@ -446,7 +463,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.6;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.daikiumehara3.ApexRoulette;
 				PRODUCT_NAME = ApexRoulette;
@@ -463,7 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.4.1;
+				CURRENT_PROJECT_VERSION = 1.6;
 				CUSTOM_BUILD_SETTING = my_release_value;
 				DEVELOPMENT_TEAM = M4DFJLV2VG;
 				INFOPLIST_FILE = ApexRoulette/Info.plist;
@@ -472,7 +489,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.6;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.daikiumehara3.ApexRoulette;
 				PRODUCT_NAME = ApexRoulette;
@@ -645,6 +662,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		A6E9F8712AAAF3FB00D99DFF /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.3.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -653,10 +678,14 @@
 			package = A67B1BF32A3D9C6E00B067F3 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
 			productName = GoogleMobileAds;
 		};
-		DB8BC5A10D086F413C75B8A7 /* Rswift */ = {
+		A6E9F8722AAAF3FB00D99DFF /* RswiftLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 339F58BFF5962AEBC3BADA18 /* XCRemoteSwiftPackageReference "R.swift" */;
-			productName = Rswift;
+			package = A6E9F8712AAAF3FB00D99DFF /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = RswiftLibrary;
+		};
+		A6E9F8762AAAF48300D99DFF /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:RswiftGenerateInternalResources";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

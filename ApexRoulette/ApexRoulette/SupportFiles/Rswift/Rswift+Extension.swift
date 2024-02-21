@@ -5,25 +5,12 @@
 //  Created by daiki umehara on 2023/02/08.
 //
 
-
-import Rswift
 import SwiftUI
+import RswiftResources
 
-extension FontResource {
-    func font(size: CGFloat) -> Font {
-        Font.custom(fontName, size: size)
-    }
-}
-
-extension ColorResource {
-    var color: Color {
-        Color(name)
-    }
-}
-
-extension StringResource {
+extension RswiftResources.StringResource {
     var localizedStringKey: LocalizedStringKey {
-        LocalizedStringKey(key)
+        LocalizedStringKey(key.description)
     }
 
     var text: Text {
@@ -31,7 +18,13 @@ extension StringResource {
     }
 }
 
-extension ImageResource {
+public extension RswiftResources.ColorResource {
+    var color: Color {
+        Color(name)
+    }
+}
+
+public extension RswiftResources.ImageResource {
     var image: Image {
         Image(name)
     }

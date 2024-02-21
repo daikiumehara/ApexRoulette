@@ -11,6 +11,10 @@ struct Roulette<T: Identifiable> {
     static func start(list: [T], pickCount: Int, isDuplicable: Bool) -> [T] {
         var result = [T]()
 
+        if pickCount <= 0 {
+            return result
+        }
+
         while true {
             // 乱数取得、listの値を取る
             let random = Int.random(in: 0..<list.count)

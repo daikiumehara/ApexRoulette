@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Rswift
 import SwiftUI
 
 enum Ammo: String, Identifiable, CaseIterable {

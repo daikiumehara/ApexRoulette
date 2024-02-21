@@ -7,20 +7,6 @@
 
 import SwiftUI
 
-enum Member: Int, CaseIterable {
-    case solo = 1
-    case duo = 2
-    case trio = 3
-
-    var image: Image {
-        switch self {
-        case .solo: return Image(systemName: "person.fill")
-        case .duo: return Image(systemName: "person.2.fill")
-        case .trio: return Image(systemName: "person.3.fill")
-        }
-    }
-}
-
 struct CharacterScreen: View {
     private let delay = 0.3
 
@@ -29,16 +15,17 @@ struct CharacterScreen: View {
     @State private var isStartRouletteAnimation = false
     @State private var pickedChara: [Character] = []
     @State private var selectedChara: [Character] = Character.allCases
-    @State private var isPresented: Bool = false
-    @State private var member: Member = .trio
+    @State private var isPresentedCharaPick: Bool = false
+    @State private var isPresentedDetailSetting: Bool = false
+    @State private var info: DetailSettingInfo = .init()
 
     var body: some View {
         VStack {
             Spacer()
 
             HStack {
-                ForEach(0..<member.rawValue, id: \.self) { index in
-                    CharacterView(character: pickedChara[safe: index]?.info ?? Character.none)
+                ForEach(0..<info.member.rawValue, id: \.self) { index in
+                    CharacterView(character: pickedChara[safe: index]?.info ?? Character.none, isDisplayRole: true)
                         .aspectRatio(1, contentMode: .fit)
                         .animation(
                             .easeInOut(duration: delay).delay(delay * CGFloat(index)),
@@ -50,19 +37,7 @@ struct CharacterScreen: View {
 
             Button {
                 withAnimation {
-                    DispatchQueue.global().async {
-                        isStartRoulette = true
-                        if isCharaPicked {
-                            pickedChara = []
-                            Thread.sleep(forTimeInterval: 0.3)
-                        }
-                        pickedChara = CharacterRoulette.start(list: selectedChara, pickCount: member.rawValue)
-                        isStartRouletteAnimation = true
-                        Thread.sleep(forTimeInterval: CGFloat(member.rawValue) * delay)
-                        isStartRouletteAnimation = false
-                        isStartRoulette = false
-                        isCharaPicked = true
-                    }
+                    startRoulette()
                 }
             } label: {
                 Text(localizeString(key: .start))
@@ -70,32 +45,77 @@ struct CharacterScreen: View {
                     .frame(width: 100, height: 100)
             }
             .primaryCircleButton(disable: .init(
-                get: { isStartRoulette || selectedChara.count < member.rawValue },
+                get: { disableStartButton },
                 set: { _ in }
             ))
 
             Spacer()
 
+            HStack(spacing: 16) {
+                Button {
+                    isPresentedCharaPick = true
+                } label: {
+                    Text(localizeString(key: .character_pick))
+                        .bold()
+                }
+                .primaryButton()
+                .fullScreenCover(isPresented: $isPresentedCharaPick) {
+                    CharacterPickView(isPresented: $isPresentedCharaPick, selectedChara: $selectedChara)
+                }
 
-            SelectCounter(selection: $member, items: Member.allCases, toImage: { item in
-                item.image
-            })
-            .frame(width: 300)
-            .padding()
-
-            Button {
-                isPresented = true
-            } label: {
-                Text(localizeString(key: .character_pick))
-                    .bold()
-            }
-            .primaryButton()
-            .fullScreenCover(isPresented: $isPresented) {
-                CharacterPickView(isPresented: $isPresented, selectedChara: $selectedChara)
+                Button {
+                    isPresentedDetailSetting = true
+                } label: {
+                    Text(localizeString(key: .detail_setting))
+                        .bold()
+                }
+                .primaryButton()
+                .fullScreenCover(isPresented: $isPresentedDetailSetting) {
+                    DetailSettingView(isPresentedDetailSetting: $isPresentedDetailSetting, info: $info)
+                }
             }
 
             Spacer()
         }
+    }
+
+    private func startRoulette() {
+        DispatchQueue.global().async {
+            isStartRoulette = true
+            if isCharaPicked {
+                pickedChara = []
+                Thread.sleep(forTimeInterval: 0.3)
+            }
+            if info.countSum != 0 {
+                let scumisher = CharacterRoulette.start(list: selectedChara.filter({ $0.info.role == .scumisher }), pickCount: info.scumisher)
+                let support = CharacterRoulette.start(list: selectedChara.filter({ $0.info.role == .support }), pickCount: info.support)
+                let assault = CharacterRoulette.start(list: selectedChara.filter({ $0.info.role == .assault }), pickCount: info.assault)
+                let reconnaissance = CharacterRoulette.start(list: selectedChara.filter({ $0.info.role == .reconnaissance }), pickCount: info.reconnaissance)
+                let controller = CharacterRoulette.start(list: selectedChara.filter({ $0.info.role == .controller }), pickCount: info.controller)
+                let list = scumisher + support + assault + reconnaissance + controller
+                let overList = selectedChara.filter({ chara in
+                    !list.contains(where: { $0 == chara })
+                })
+                pickedChara = list + CharacterRoulette.start(list: overList, pickCount: info.member.rawValue - info.countSum)
+            } else {
+                pickedChara = CharacterRoulette.start(list: selectedChara, pickCount: info.member.rawValue)
+            }
+            isStartRouletteAnimation = true
+            Thread.sleep(forTimeInterval: CGFloat(info.member.rawValue) * delay)
+            isStartRouletteAnimation = false
+            isStartRoulette = false
+            isCharaPicked = true
+        }
+    }
+
+    private var disableStartButton: Bool {
+        isStartRoulette || 
+        selectedChara.count < info.member.rawValue ||
+        selectedChara.filter({ $0.info.role == .scumisher }).count < info.scumisher ||
+        selectedChara.filter({ $0.info.role == .assault }).count < info.assault ||
+        selectedChara.filter({ $0.info.role == .support }).count < info.support ||
+        selectedChara.filter({ $0.info.role == .reconnaissance }).count < info.reconnaissance ||
+        selectedChara.filter({ $0.info.role == .controller }).count < info.controller
     }
 }
 
