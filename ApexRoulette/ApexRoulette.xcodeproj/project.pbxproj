@@ -24,7 +24,7 @@
 		8A1324D4C3A8C570F5EF3AA7 /* Roulette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83963F3AD2F7C68C35666A /* Roulette.swift */; };
 		91FA1C04D53810A5D4392F33 /* WeaponScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CEBFF09E809950F1F974D1 /* WeaponScreen.swift */; };
 		941CEB67376864AE91F716F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38DCF3F71BA241DE7A9D869 /* ContentView.swift */; };
-		A67355AB2B85D71A00C53F61 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = A67355AA2B85D71A00C53F61 /* RswiftLibrary */; };
+		A67355B32B85DA7400C53F61 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = A67355B22B85DA7400C53F61 /* RswiftLibrary */; };
 		A67A66B62A6515E700F346E3 /* PrimaryCircleButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A66B52A6515E700F346E3 /* PrimaryCircleButtonModifier.swift */; };
 		A67B1BE52A10C3AE00B067F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67B1BE72A10C3AE00B067F3 /* Localizable.strings */; };
 		A67B1BEB2A10C9E100B067F3 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B1BEA2A10C9E100B067F3 /* Localizable.swift */; };
@@ -84,7 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A67B1BF52A3D9C6E00B067F3 /* GoogleMobileAds in Frameworks */,
-				A67355AB2B85D71A00C53F61 /* RswiftLibrary in Frameworks */,
+				A67355B32B85DA7400C53F61 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,12 +305,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				A67355AD2B85D73F00C53F61 /* PBXTargetDependency */,
+				A67355B52B85DAB800C53F61 /* PBXTargetDependency */,
 			);
 			name = ApexRoulette;
 			packageProductDependencies = (
 				A67B1BF42A3D9C6E00B067F3 /* GoogleMobileAds */,
-				A67355AA2B85D71A00C53F61 /* RswiftLibrary */,
+				A67355B22B85DA7400C53F61 /* RswiftLibrary */,
 			);
 			productName = ApexRoulette;
 			productReference = E18DE00A2040026362AA288B /* ApexRoulette.app */;
@@ -322,7 +322,8 @@
 		A4A055FBEFF1B26AF822146F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1200;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = "Daiki Umehara";
 			};
 			buildConfigurationList = 3991A0AB5F0A40F19B8573C9 /* Build configuration list for PBXProject "ApexRoulette" */;
@@ -336,9 +337,8 @@
 			);
 			mainGroup = 03197C546B1AD313B9CFDD8B;
 			packageReferences = (
-				339F58BFF5962AEBC3BADA18 /* XCRemoteSwiftPackageReference "R.swift" */,
 				A67B1BF32A3D9C6E00B067F3 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
-				A6E9F8712AAAF3FB00D99DFF /* XCRemoteSwiftPackageReference "R.swift" */,
+				A67355B12B85DA7400C53F61 /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
@@ -423,9 +423,9 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A67355AD2B85D73F00C53F61 /* PBXTargetDependency */ = {
+		A67355B52B85DAB800C53F61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = A67355AC2B85D73F00C53F61 /* RswiftGenerateInternalResources */;
+			productRef = A67355B42B85DAB800C53F61 /* RswiftGenerateInternalResources */;
 		};
 /* End PBXTargetDependency section */
 
@@ -539,6 +539,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -596,6 +597,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -646,12 +648,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		339F58BFF5962AEBC3BADA18 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+		A67355B12B85DA7400C53F61 /* XCRemoteSwiftPackageReference "R.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.4.0;
+				minimumVersion = 7.5.0;
 			};
 		};
 		A67B1BF32A3D9C6E00B067F3 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
@@ -662,23 +664,15 @@
 				minimumVersion = 10.0.0;
 			};
 		};
-		A6E9F8712AAAF3FB00D99DFF /* XCRemoteSwiftPackageReference "R.swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.3.2;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A67355AA2B85D71A00C53F61 /* RswiftLibrary */ = {
+		A67355B22B85DA7400C53F61 /* RswiftLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A6E9F8712AAAF3FB00D99DFF /* XCRemoteSwiftPackageReference "R.swift" */;
+			package = A67355B12B85DA7400C53F61 /* XCRemoteSwiftPackageReference "R.swift" */;
 			productName = RswiftLibrary;
 		};
-		A67355AC2B85D73F00C53F61 /* RswiftGenerateInternalResources */ = {
+		A67355B42B85DAB800C53F61 /* RswiftGenerateInternalResources */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "plugin:RswiftGenerateInternalResources";
 		};
