@@ -8,4 +8,3 @@
 
 defaults write com.apple.dt.Xcode IDESkipPackagePluginFingerprintValidatation -bool YES
 
-echo "read script"

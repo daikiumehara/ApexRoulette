@@ -307,7 +307,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9297DB7D93A07A7162ABE6F0 /* Build configuration list for PBXNativeTarget "ApexRoulette" */;
 			buildPhases = (
-				0AFA1859B99C9669B6AC13F5 /* Run R.swift */,
 				DC38384D37CD8BE5F79776A9 /* Sources */,
 				87E4CF4EAFD51EBAAB332C2A /* Resources */,
 				BA9A261FDE825A0AB9A849DD /* Frameworks */,
@@ -371,28 +370,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0AFA1859B99C9669B6AC13F5 /* Run R.swift */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run R.swift";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(SRCROOT)/Rswift/R.generated.swift",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ $(uname -m) = \"arm64\" ]; then\n  export PATH=\"/opt/homebrew/bin:/opt/homebrew/sbin:${PATH+:$PATH}\";\nfi\nmint run mac-cain13/R.swift@v6.1.0 rswift generate \"${SRCROOT}/ApexRoulette/SupportFiles/Rswift/R.generated.swift\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC38384D37CD8BE5F79776A9 /* Sources */ = {
