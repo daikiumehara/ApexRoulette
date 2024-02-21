@@ -24,6 +24,7 @@
 		8A1324D4C3A8C570F5EF3AA7 /* Roulette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83963F3AD2F7C68C35666A /* Roulette.swift */; };
 		91FA1C04D53810A5D4392F33 /* WeaponScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CEBFF09E809950F1F974D1 /* WeaponScreen.swift */; };
 		941CEB67376864AE91F716F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38DCF3F71BA241DE7A9D869 /* ContentView.swift */; };
+		A67355AB2B85D71A00C53F61 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = A67355AA2B85D71A00C53F61 /* RswiftLibrary */; };
 		A67A66B62A6515E700F346E3 /* PrimaryCircleButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A66B52A6515E700F346E3 /* PrimaryCircleButtonModifier.swift */; };
 		A67B1BE52A10C3AE00B067F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67B1BE72A10C3AE00B067F3 /* Localizable.strings */; };
 		A67B1BEB2A10C9E100B067F3 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B1BEA2A10C9E100B067F3 /* Localizable.swift */; };
@@ -32,7 +33,6 @@
 		A67B1BF72A3D9FB300B067F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B1BF62A3D9FB300B067F3 /* AppDelegate.swift */; };
 		A67B1BFA2A3DB9FE00B067F3 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B1BF92A3DB9FE00B067F3 /* BannerViewController.swift */; };
 		A67B1BFC2A3DBD9500B067F3 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B1BFB2A3DBD9500B067F3 /* BannerView.swift */; };
-		A6E9F8732AAAF3FB00D99DFF /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = A6E9F8722AAAF3FB00D99DFF /* RswiftLibrary */; };
 		A6E9F87C2AAB018200D99DFF /* DetailSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9F87B2AAB018200D99DFF /* DetailSettingView.swift */; };
 		BE5318AA189708A1BBAC1975 /* CharacterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36EB1286E0BE668E622409 /* CharacterInfo.swift */; };
 		C4522B2B5F3953FD69BDA3EF /* CharacterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD523E273FC42ED1555C1E1 /* CharacterScreen.swift */; };
@@ -84,7 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A67B1BF52A3D9C6E00B067F3 /* GoogleMobileAds in Frameworks */,
-				A6E9F8732AAAF3FB00D99DFF /* RswiftLibrary in Frameworks */,
+				A67355AB2B85D71A00C53F61 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,12 +305,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				A6E9F8772AAAF48300D99DFF /* PBXTargetDependency */,
+				A67355AD2B85D73F00C53F61 /* PBXTargetDependency */,
 			);
 			name = ApexRoulette;
 			packageProductDependencies = (
 				A67B1BF42A3D9C6E00B067F3 /* GoogleMobileAds */,
-				A6E9F8722AAAF3FB00D99DFF /* RswiftLibrary */,
+				A67355AA2B85D71A00C53F61 /* RswiftLibrary */,
 			);
 			productName = ApexRoulette;
 			productReference = E18DE00A2040026362AA288B /* ApexRoulette.app */;
@@ -423,9 +423,9 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A6E9F8772AAAF48300D99DFF /* PBXTargetDependency */ = {
+		A67355AD2B85D73F00C53F61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = A6E9F8762AAAF48300D99DFF /* RswiftGenerateInternalResources */;
+			productRef = A67355AC2B85D73F00C53F61 /* RswiftGenerateInternalResources */;
 		};
 /* End PBXTargetDependency section */
 
@@ -673,19 +673,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A67B1BF42A3D9C6E00B067F3 /* GoogleMobileAds */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A67B1BF32A3D9C6E00B067F3 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
-			productName = GoogleMobileAds;
-		};
-		A6E9F8722AAAF3FB00D99DFF /* RswiftLibrary */ = {
+		A67355AA2B85D71A00C53F61 /* RswiftLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A6E9F8712AAAF3FB00D99DFF /* XCRemoteSwiftPackageReference "R.swift" */;
 			productName = RswiftLibrary;
 		};
-		A6E9F8762AAAF48300D99DFF /* RswiftGenerateInternalResources */ = {
+		A67355AC2B85D73F00C53F61 /* RswiftGenerateInternalResources */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "plugin:RswiftGenerateInternalResources";
+		};
+		A67B1BF42A3D9C6E00B067F3 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A67B1BF32A3D9C6E00B067F3 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
