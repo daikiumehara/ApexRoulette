@@ -7,3 +7,5 @@
 #  Copyright © 2024 Daiki Umehara. All rights reserved.
 
 defaults write com.apple.dt.Xcode IDESkipPackagePluginFingerprintValidatation -bool YES
+
+echo "read script"

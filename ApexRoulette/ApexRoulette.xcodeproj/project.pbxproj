@@ -375,7 +375,6 @@
 /* Begin PBXShellScriptBuildPhase section */
 		0AFA1859B99C9669B6AC13F5 /* Run R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
