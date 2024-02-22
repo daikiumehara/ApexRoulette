@@ -2,11 +2,11 @@
 //  ApexRouletteTests.swift
 //  ApexRouletteTests
 //
-//  Created by daiki umehara on 2023/02/04.
+//  Created by daiki umehara on 2024/02/22.
+//  Copyright © 2024 Daiki Umehara. All rights reserved.
 //
 
 import XCTest
-@testable import ApexRoulette
 
 final class ApexRouletteTests: XCTestCase {
 
@@ -28,7 +28,7 @@ final class ApexRouletteTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
